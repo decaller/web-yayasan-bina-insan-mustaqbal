@@ -4,15 +4,19 @@ export const nav = [
 		slug: '/',
 	},
 	{
-		title: 'Blog',
-		slug: '/blog',
+		title: 'Sekolah Bakat',
+		slug: '/sekolahbakat',
 	},
 	{
-		title: 'About',
-		slug: '/company/about',
+		title: 'Artikel',
+		slug: '/artikel',
 	},
 	{
-		title: 'Contact',
-		slug: '/company/contact',
+		title: 'Tentang',
+		slug: '/mustaqbal/tentang',
+	},
+	{
+		title: 'Kontak',
+		slug: '/mustaqbal/kontak',
 	},
 ];
