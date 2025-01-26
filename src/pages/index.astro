@@ -41,7 +41,8 @@ const seo = {
 		</div>
 		<picture slot="image-container">
 			<img
-				src="/assets/images/landing-1/landing-hero-1.jpg"
+				src={import.meta.env.BASE_URL +
+					'/assets/images/landing-1/landing-hero-1.jpg'}
 				alt="Ayah-anak"
 				id="home-hero-image"
 			/>
@@ -63,7 +64,7 @@ const seo = {
 			dan menumbuhkannya sehingga setiap lulusan mencapai tingkat shalih
 			(diterima masyarakat) dan muslih (berkontribusi sesuai bidangnya.)
 		</p>
-		<Button href="/theme/get-started" customIcon
+		<Button href={import.meta.env.BASE_URL + '/sekolahbakat'} customIcon
 			>Info lebih lanjut <Fragment slot="icon">
 				<Icon name="ic:baseline-chevron-right" />
 			</Fragment></Button

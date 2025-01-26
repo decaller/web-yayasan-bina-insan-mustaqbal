@@ -41,7 +41,8 @@ const seo = {
 		</div>
 		<picture slot="image-container">
 			<img
-				src="/assets/images/sekolahbakat/hero-sekolah-bakat.jpg"
+				src={import.meta.env.BASE_URL +
+					'/assets/images/sekolahbakat/hero-sekolah-bakat.jpg'}
 				alt="Ayah-anak"
 				id="home-hero-image"
 			/>
@@ -126,7 +127,8 @@ const seo = {
 		</div>
 		<picture slot="image-container">
 			<img
-				src="/assets/images/landing-1/landing-sticky.jpg"
+				src={import.meta.env.BASE_URL +
+					'/assets/images/landing-1/landing-sticky.jpg'}
 				alt="Astro Odyssey"
 				loading="lazy"
 			/>
