@@ -14,7 +14,7 @@ export default defineConfig({
 	build: {
 		assets: 'assets', // This helps with asset handling
 	},
-	// outDir: './docs',
+	publicDir: './public',
 	integrations: [
 		sitemap(),
 		mdx(),
