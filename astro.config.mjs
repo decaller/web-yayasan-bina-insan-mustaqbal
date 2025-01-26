@@ -11,9 +11,9 @@ export default defineConfig({
 	base: '/web-yayasan-bina-insan-mustaqbal',
 	sitemap: true, // Generate sitemap (set to "false" to disable)
 	// trailingSlash: 'always', // This can help with routing
-	build: {
-		assets: 'assets', // This helps with asset handling
-	},
+	// build: {
+	// 	assets: 'assets', // This helps with asset handling
+	// },
 	publicDir: './public',
 	integrations: [
 		sitemap(),
