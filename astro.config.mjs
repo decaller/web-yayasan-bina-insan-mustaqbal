@@ -10,7 +10,10 @@ export default defineConfig({
 	site: 'https://decaller.github.io/web-yayasan-bina-insan-mustaqbal/', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
 	base: '/web-yayasan-bina-insan-mustaqbal',
 	sitemap: true, // Generate sitemap (set to "false" to disable)
-
+	trailingSlash: 'always', // This can help with routing
+	build: {
+		assets: 'assets', // This helps with asset handling
+	},
 	// outDir: './docs',
 	integrations: [
 		sitemap(),
