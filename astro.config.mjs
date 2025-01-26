@@ -7,7 +7,8 @@ import yeskunallumami from '@yeskunall/astro-umami';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://decaller.github.io',
+	site: 'https://decaller.github.io', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
+	base: '/web-yayasan-bina-insan-mustaqbal',
 	sitemap: true, // Generate sitemap (set to "false" to disable)
 	trailingSlash: 'always', // This can help with routing
 	build: {
