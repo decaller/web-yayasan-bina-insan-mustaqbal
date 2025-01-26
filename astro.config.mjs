@@ -9,7 +9,7 @@ import yeskunallumami from '@yeskunall/astro-umami';
 export default defineConfig({
 	site: 'https://insanmustaqbal.or.id/', // Your public domain, e.g.: https://my-site.dev/. Used to generate sitemaps and canonical URLs.
 	sitemap: true, // Generate sitemap (set to "false" to disable)
-	outDir: './doc',
+	outDir: './docs',
 	integrations: [
 		sitemap(),
 		mdx(),
