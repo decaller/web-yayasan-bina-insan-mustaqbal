@@ -1,6 +1,6 @@
 ---
 import { Container } from '@components/odyssey-theme';
-import Layout from './Page.astro'; 
+import Layout from './Page.astro';
 import { generateTagData } from '../utils/helpers';
 
 const {content: {title, description, publishDate, canonicalURL, featuredImage, tags} } = Astro.props;
@@ -19,8 +19,8 @@ const seo = {
 	image: featuredImage,
 };
 ---
-<Layout seo={seo}> 
-  <div class="post-header__container"> 
+<Layout seo={seo}>
+  <div class="post-header__container">
     <ul class="post-tags__list">
       {allTagsData.map(tag => (
         <li class="post-tags__tag">
@@ -34,9 +34,9 @@ const seo = {
     <p class="post-layout__date">
       <time><em>{publishDate}</em></time>
     </p>
-    {featuredImage && <img class="post-layout__img" src={featuredImage} alt={title} />}
+    {featuredImage && <img class="post-layout__img" src={import.meta.env.BASE_URL +featuredImage} alt={title} />}
   </div>
-  <Container narrow>  
+  <Container narrow>
     <article id="article">
         <slot></slot>
     </article>
